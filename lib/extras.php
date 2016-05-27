@@ -31,3 +31,15 @@ function excerpt_more() {
   return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+
+/**
+ * Return .container or .container-fluid
+ */
+
+function container_selector( $page_url, $full_width_pages ){
+	if ( in_array( $page_url, $full_width_pages ) ){
+		return 'container-fluid';
+	} else {
+		return 'container';
+	}
+}

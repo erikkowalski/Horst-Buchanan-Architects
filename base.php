@@ -18,7 +18,12 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <div class="wrap container" role="document">
+	  <?php
+	  $url = basename( Wrapper\template_path() );
+	  $full_width_pages = [ 'front-page.php', 'page-who-we-are.php'];
+	  $container = Roots\Sage\Extras\container_selector( $url, $full_width_pages );
+	  ?>
+	  <div class="wrap <?= $container ?>" role="document">
       <div class="content row">
         <main class="main">
           <?php include Wrapper\template_path(); ?>
