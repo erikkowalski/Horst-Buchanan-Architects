@@ -1,0 +1,24 @@
+body {
+	padding-top: 50px;
+}
+
+img[class*=align], img[class*=wp-image-] {
+	height: auto;
+}
+img.size-full {
+	max-width: 100%;
+	width: auto;
+}
+
+img.wp-post-image {
+	max-width: 100%;
+	height: auto;
+}
+
+.admin-bar .navbar {
+	margin-top: 30px;
+}
+
+.page-header {
+	color: $brand-primary;
+}

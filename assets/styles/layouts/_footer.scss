@@ -1,0 +1,27 @@
+footer {
+
+	.menu-item {
+		display: inline-block;
+	}
+	.widget_meta {
+		h3{
+			display: none;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		li {
+			list-style: none;
+			display: inline-block;
+			display: none;
+		}
+		ul li:first-child {
+			display: inline-block;
+		}
+	}
+
+} //.footer
