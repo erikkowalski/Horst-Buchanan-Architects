@@ -1,5 +1,5 @@
 <?php while (have_posts()) : the_post(); ?>
-<?php get_template_part('templates/page', 'header'); ?>
+<?php // get_template_part('templates/page', 'header'); ?>
 <?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
 
@@ -21,7 +21,7 @@ $project = new WP_Query( $project_args );
 } ?>
 		<h4 class="entry-title"> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h4>
 		<div class="entry-content">
-			<?php the_excerpt();?>
+			<?php // the_excerpt();?>
 		</div>
 	</div>
 	<?php endwhile;
