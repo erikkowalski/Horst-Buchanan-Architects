@@ -12,7 +12,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><span>Horst&nbsp;</span>Buchanan</a>
+		 <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><span>Horst&nbsp;</span>Buchanan<br><span class="sub-head" >ARCHITECTS</span> </a>
     </div>
 
     <nav class="collapse navbar-collapse navbar-right" role="navigation">
