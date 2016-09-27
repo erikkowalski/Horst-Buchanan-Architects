@@ -7,6 +7,8 @@
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
+    <h3>Project Name</h3>
+    <h3>Project Team</h3>
     <footer>
       <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>
     </footer>
