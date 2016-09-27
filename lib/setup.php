@@ -90,6 +90,7 @@ function display_sidebar() {
     is_page_template('template-custom.php'),
 	 is_page('how-we-work'),
     is_page('portfolio'),
+	 is_single()
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
