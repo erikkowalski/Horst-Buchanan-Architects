@@ -2,6 +2,10 @@ body {
 	padding-top: 90px;
 }
 
+#tinymce {
+	padding-top: 0;
+}
+
 img[class*=align], img[class*=wp-image-] {
 	height: auto;
 }
