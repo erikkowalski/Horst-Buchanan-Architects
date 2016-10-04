@@ -1,7 +1,13 @@
-footer {
+.content-info {
+	padding-bottom: 4em;
 
 	.menu-item {
 		display: inline-block;
+		a {
+			font-weight: 100;
+			color: $gray-light;
+			letter-spacing: 0.05em;
+		}
 	}
 	.widget_meta {
 		h3{
@@ -21,6 +27,28 @@ footer {
 		}
 		ul li:first-child {
 			display: inline-block;
+		}
+		a {
+			color: $gray-light;
+			font-weight: 100;
+			letter-spacing: 0.05em;
+		}
+	}
+
+	.nav-footer {
+		max-width: 620px;
+		margin: 0 auto;
+
+	}
+
+	.copyright {
+		text-align: center;
+		font-weight: 100;
+		color: $gray-light;
+
+		margin:2em 0;
+		p {
+			letter-spacing: 0.05em;
 		}
 	}
 
