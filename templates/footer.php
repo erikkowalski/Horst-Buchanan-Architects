@@ -7,6 +7,9 @@
 		  endif;
 		  ?>
 	  </nav>
+	  <div class="copyright">
+		  <p>Copyright &copy; <?php echo date(Y) ?> Horst Buchanan Architects Inc.</p>
+	  </div>
     <?php dynamic_sidebar('sidebar-footer'); ?>
   </div>
 </footer>
