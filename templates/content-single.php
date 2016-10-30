@@ -24,16 +24,13 @@
 <!-- Project Description Section -->
 
 	 <div class="project-description col-sm-6 col-md-7 ">
-	 <h3>Project Description</h3>
 		 <p><?php the_field('project_description') ?></p>
     </div>
 	  </section>
 
 <!-- Photo credit Section -->
 	  <section class="photo-credit clearfix">
-	  <div class="col-md-5"></div>
 		  <div class="team col-md-7 col-md-3">
-			  <h3>Photo Credit</h3>
 			  <?php if( have_rows('project_team') ): ?>
 			  <ul>
 				  <?php while( have_rows('project_team') ): the_row(); ?>
