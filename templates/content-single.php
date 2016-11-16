@@ -4,6 +4,44 @@
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
+	  <div id="carousel-example-generic" class="carousel fade" data-ride="carousel">
+		  <!-- Indicators -->
+
+		  <?php
+		  $images = get_field('project_page_gallery');
+		  if( $images ): ?>
+		  <?php $dataId=0 ?>
+		  <ol class="carousel-indicators">
+			  <?php foreach( $images as $image ): ?>
+			  <li data-target="#carousel-example-generic" id="data<?php echo $dataId ?>" data-slide-to="<?php echo $dataId ?>" class=""></li>
+			  <?php $dataId++ ?>
+			  <?php endforeach; ?>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+
+		  <div class="carousel-inner" role="listbox">
+			  <?php $slideId = 0; ?>
+
+			  <?php foreach( $images as $image ): ?>
+			  <div class="item " id="slide<?php echo $slideId;?>">
+				  <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="  " />
+			  </div>
+			  <?php $slideId++; ?>
+			  <?php endforeach; ?>
+		  </div>
+
+
+		  <?php endif; ?>
+
+
+	  </div>
+
+
+	  <p>
+	 </p>
+
+
     <section class="project-info container-fluid">
 
 <!-- Project tittle and types Section -->
@@ -24,16 +62,13 @@
 <!-- Project Description Section -->
 
 	 <div class="project-description col-sm-6 col-md-7 ">
-	 <h3>Project Description</h3>
 		 <p><?php the_field('project_description') ?></p>
     </div>
 	  </section>
 
 <!-- Photo credit Section -->
 	  <section class="photo-credit clearfix">
-	  <div class="col-md-5"></div>
 		  <div class="team col-md-7 col-md-3">
-			  <h3>Photo Credit</h3>
 			  <?php if( have_rows('project_team') ): ?>
 			  <ul>
 				  <?php while( have_rows('project_team') ): the_row(); ?>
