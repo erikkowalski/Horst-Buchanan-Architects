@@ -14,7 +14,7 @@
 		<?php	if( get_row_layout() == 'grid_one' ): ?>
 
 		<div class="row grid-one">
-			<div class="col-md-4">
+			<div class="col col-one col-xs-4">
 				<div class="grid-one-image-one">
 					<a href="<?php the_sub_field('grid_one_image_one_link'); ?>">
 						<img class="img-responsive" src="<?php	echo the_sub_field('grid_one_image_one');  ?>" alt="">
@@ -27,7 +27,7 @@
 				</div>
 			</div>
 
-		 <div class="col-md-8">
+		 <div class="col col-xs-8">
 			 <div class="grid-one-image-three">
 				 <a href="<?php the_sub_field('grid_one_image_three_link'); ?>">
 					 <img class="img-responsive" src="<?php	echo the_sub_field('grid_one_image_three');  ?>" alt="">
@@ -43,9 +43,21 @@
 	</div><!-- /.grid-one -->
 		<!-- Grid One -->
 	   <?php elseif( get_row_layout() == 'grid_two' ):  ?>
-	   <div class="row">
-			<div class="col-md-4">
-				<a href="<?php	the_sub_field('grid_two_image_one_link'); ?>"><img class="img-responsive" src="<?php	the_sub_field('grid_two_image_one'); ?>" alt=""></a>
+	   <div class="row grid-two">
+			<div class="col col-one col-xs-6">
+				<a href="<?php	the_sub_field('grid_two_image_one_link'); ?>">
+					<img class="img-responsive" src="<?php	the_sub_field('grid_two_image_one'); ?>" alt="">
+				</a>
+			</div>
+			<div class="col vertical  col-xs-3">
+				<a href="<?php	the_sub_field('grid_two_image_two_link'); ?>">
+					<img class="img-responsive" src="<?php	the_sub_field('grid_two_image_two'); ?>" alt="">
+				</a>
+			</div>
+			<div class="col vertical  col-xs-3">
+				<a href="<?php	the_sub_field('grid_two_image_three_link'); ?>">
+					<img class="img-responsive" src="<?php	the_sub_field('grid_two_image_three'); ?>" alt="">
+				</a>
 			</div>
 		</div>
 	<?php	endif;
