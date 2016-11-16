@@ -34,8 +34,10 @@
       }
     },
     // About us page, note the change from about-us to about_us.
-    'about_us': {
+    'single_project': {
       init: function() {
+			$("#slide0").addClass("active");
+			$("#data0").addClass("active");
         // JavaScript to be fired on the about us page
       }
     }
