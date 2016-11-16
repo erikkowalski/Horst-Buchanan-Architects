@@ -5,8 +5,6 @@
 
 
 
-
-
 <?php if( have_rows('portfolio_grid') ): ?>
 
 	<?php while ( have_rows('portfolio_grid') ) : the_row(); ?>
