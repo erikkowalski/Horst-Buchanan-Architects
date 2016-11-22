@@ -4,7 +4,7 @@
 ?>
 
 <header class="banner navbar navbar-default navbar-fixed-top" role="banner">
-  <div class="container-fluid">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only"><?= __('Toggle navigation', 'sage'); ?></span>
@@ -12,7 +12,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-		 <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><span>Horst&nbsp;</span>Buchanan<br><span class="sub-head" >ARCHITECTS</span> </a>
+		 <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><span>Horst&nbsp;</span>Buchanan </a>
     </div>
 
     <nav class="collapse navbar-collapse navbar-right" role="navigation">
