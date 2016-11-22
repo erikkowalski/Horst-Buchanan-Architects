@@ -20,7 +20,7 @@ use Roots\Sage\Wrapper;
     ?>
 	  <?php
 	  $url = basename( Wrapper\template_path() );
-	  $full_width_pages = [ 'front-page.php','page-how-we-work.php'];
+	  $full_width_pages = [ 'page-how-we-work.php'];
 	  $container = Roots\Sage\Extras\container_selector( $url, $full_width_pages );
 	  ?>
 	  <div class="wrap <?= $container ?>" role="document">
