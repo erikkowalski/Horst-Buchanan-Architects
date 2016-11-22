@@ -1,9 +1,12 @@
 .navbar-default {
+	margin-bottom: 0;
 	.navbar-brand {
 		position: relative;
 		color: $light-blue;
-		padding-top: 14px;
+		padding-top: 40px;
+		padding-bottom: 0;
 		font-weight: 100;
+		font-size: 1.7em;
 		span {
 			font-weight: 700;
 			color: $dark-blue;
@@ -14,21 +17,24 @@
 	:hover {
 		color: $light-blue;
 	}
-		.sub-head {
-			font-size: 0.85em;
-			color: #999999;
-			font-weight: 100;
-			letter-spacing: 0.38em;
-			border-top: 1px solid #d6d6d6;
-			padding-left: 0.9em;
-			padding-right: 0.6em;
-			padding-top: 2px;
-			position: absolute;
-			top: 38px;
-			left: 2.5px;
-		}
+
 	}//.navbar-brand
 }//.navbar-default
+
+.sub-head {
+	font-size: 1.2em;
+	color: #999999;
+	font-weight: 100;
+	letter-spacing: 0.38em;
+	//border-top: 1px solid #d6d6d6;
+	padding-left: 0.9em;
+	padding-right: 0.6em;
+	padding-top: 0.2em;
+	//padding-top: 2px;
+//	position: absolute;
+	//top: 50px;
+//	left: 2.5px;
+}
 
 .navbar-default .navbar-brand:hover {
 	color: $light-blue;
@@ -55,7 +61,11 @@
 	}//.navbar-right
 
 	.navbar-nav>li>a{
-		//color: black;
+		padding-top: 40px;
+		padding-bottom: 0;
+		color: #999;
+		font-weight: 100;
+
 	}
 }
 
