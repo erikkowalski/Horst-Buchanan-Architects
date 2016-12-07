@@ -56,6 +56,16 @@
 		 </ul>
 		 <?php endif; ?>
 
+			 <section class="photo-credit clearfix">
+
+			 <?php if( have_rows('project_team') ): ?>
+			 <ul>
+				 <?php while( have_rows('project_team') ): the_row(); ?>
+				 <li><p><span><?php the_sub_field('role'); ?></span>&nbsp;&nbsp;<a target="_blank" href="<?php the_sub_field('team_member_url'); ?>"><?php the_sub_field('team_member'); ?></a></p></li>
+				 <?php endwhile; ?>
+			 </ul>
+			 <?php endif; ?>
+			 </section>
 
     </div>
 
@@ -67,17 +77,7 @@
 	  </section>
 
 <!-- Photo credit Section -->
-	  <section class="photo-credit clearfix">
-		  <div class="team col-md-7 col-md-3">
-			  <?php if( have_rows('project_team') ): ?>
-			  <ul>
-				  <?php while( have_rows('project_team') ): the_row(); ?>
-				  <li><p><span><?php the_sub_field('role'); ?></span>&nbsp;&nbsp;<a target="_blank" href="<?php the_sub_field('team_member_url'); ?>"><?php the_sub_field('team_member'); ?></a></p></li>
-				  <?php endwhile; ?>
-			  </ul>
-			  <?php endif; ?>
-		  </div>
-	  </section>
+
 
 
     <footer>
