@@ -76,6 +76,16 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
+$(function(){
+	$('#carousel-example-generic').carousel({
+		interval:false
+	});
+})
+
+
+
 })(jQuery); // Fully reference jQuery after this point.
+
+
 
 
