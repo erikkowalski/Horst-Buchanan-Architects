@@ -1,6 +1,6 @@
 .portfolio {
 	padding-top: 80px;
-	.grid-one {
+	.grid-one, .grid-two {
 		margin-bottom: 10px;
 		.col {
 			padding-right:0;
@@ -42,9 +42,21 @@
 			@media(max-width:$screen-lg){
 			width:25.5%
 			}
-
+			@media(min-width:$screen-md){
+				width: 24%;
+				margin-right: 10px;
+				img{
+					//margin-right:3px;
+				}
+			}
+		} //.col-xs-3
+		.col-xs-6 {
+			img {
+				margin-right: 3px;
+			}
 		}
-	}
+	} //.grid-two
+
 }
 
 
