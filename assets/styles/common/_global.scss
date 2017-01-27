@@ -59,3 +59,8 @@ img.wp-post-image {
 		}
 	}
 }
+
+.carousel-control.left, .carousel-control.right {
+	background-image:none !important;
+	filter:none !important;
+}
