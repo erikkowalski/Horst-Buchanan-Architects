@@ -12,26 +12,30 @@
 		<?php	if( get_row_layout() == 'grid_one' ): ?>
 
 		<div class="row grid-one">
-			<div class="col col-one col-xs-4">
+			<div class="col col-one col-sm-4">
 				<div class="grid-one-image-one">
+					<h2><?php the_sub_field('grid_one_image_one_tittle') ?></h2>
 					<a href="<?php the_sub_field('grid_one_image_one_link'); ?>">
 						<img class="img-responsive" src="<?php	echo the_sub_field('grid_one_image_one');  ?>" alt="">
 					</a>
 				</div>
 				<div class="grid-one-image-two">
+					<h2><?php the_sub_field('grid_one_image_two_tittle') ?></h2>
 					<a href="<?php the_sub_field('grid_one_image_two_link'); ?>">
 						<img class="img-responsive" src="<?php	echo the_sub_field('grid_one_image_two');  ?>" alt="">
 					</a>
 				</div>
 			</div>
 
-		 <div class="col col-xs-8">
+		 <div class="col col-sm-8">
 			 <div class="grid-one-image-three">
+				 <h2><?php the_sub_field('grid_one_image_three_tittle') ?></h2>
 				 <a href="<?php the_sub_field('grid_one_image_three_link'); ?>">
 					 <img class="img-responsive" src="<?php	echo the_sub_field('grid_one_image_three');  ?>" alt="">
 				 </a>
 			 </div>
 			 <div class="grid-one-image-four">
+				 <h2><?php the_sub_field('gridone_imagefour_tittle') ?></h2>
 				 <a href="<?php the_sub_field('grid_one_image_four_link'); ?>">
 					 <img class="img-responsive" src="<?php	echo the_sub_field('grid_one_image_four');  ?>" alt="">
 				 </a>
@@ -39,25 +43,59 @@
 
 		 </div>
 	</div><!-- /.grid-one -->
-		<!-- Grid One -->
+
+	<!-- Grid Two -->
 	   <?php elseif( get_row_layout() == 'grid_two' ):  ?>
 	   <div class="row grid-two">
-			<div class="col col-one col-xs-6">
-				<a href="<?php	the_sub_field('grid_two_image_one_link'); ?>">
-					<img class="img-responsive" src="<?php	the_sub_field('grid_two_image_one'); ?>" alt="">
+			<div class="col col-one col-sm-6">
+				<div class="grid-two-image-one">
+					<h2><?php the_sub_field('grid_two_image_one_tittle') ?></h2>
+					<a href="<?php	the_sub_field('grid_two_image_one_link'); ?>">
+						<img class="img-responsive" src="<?php	the_sub_field('grid_two_image_one'); ?>" alt="">
+					</a>
+				</div>
+			</div>
+				<div class="col vertical col-xs-6 col-sm-3">
+					<div class="grid-two-image-two">
+					<h2><?php the_sub_field('grid_two_image_two_tittle') ?></h2>
+					<a href="<?php	the_sub_field('grid_two_image_two_link'); ?>">
+						<img class="img-responsive" src="<?php	the_sub_field('grid_two_image_two'); ?>" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="col vertical col-xs-6 col-sm-3">
+			<div class="grid-two-image-three">
+				<h2><?php the_sub_field('grid_two_image_three_tittle') ?></h2>
+					<a href="<?php	the_sub_field('grid_two_image_three_link'); ?>">
+						<img class="img-responsive" src="<?php	the_sub_field('grid_two_image_three'); ?>" alt="">
+					</a>
+				</div>
+			</div>
+		</div><!-- /.grid-two -->
+
+<!-- Grid Three -->
+	   <?php elseif( get_row_layout() == 'grid_three' ):  ?>
+	   <div class="row grid-three">
+			<div class="col-one col-sm-6">
+				<div class="grid-three-image-one">
+					<h2><?php the_sub_field('grid_three_image_one_tittle') ?></h2>
+				<a href="<?php	the_sub_field('grid_three_image_one_link'); ?>">
+					<img class="img-responsive" src="<?php	the_sub_field('grid_three_image_one'); ?>" alt="">
+				</a>
+				</div>
+			</div>
+			<div class="col-two col-sm-6">
+				<div class="grid-three-image-two">
+					<h2><?php the_sub_field('grid_three_image_two_tittle') ?></h2>
+				<a href="<?php	the_sub_field('grid_three_image_two_link'); ?>">
+					<img class="img-responsive" src="<?php	the_sub_field('grid_three_image_two'); ?>" alt="">
 				</a>
 			</div>
-			<div class="col vertical  col-xs-3">
-				<a href="<?php	the_sub_field('grid_two_image_two_link'); ?>">
-					<img class="img-responsive" src="<?php	the_sub_field('grid_two_image_two'); ?>" alt="">
-				</a>
-			</div>
-			<div class="col vertical  col-xs-3">
-				<a href="<?php	the_sub_field('grid_two_image_three_link'); ?>">
-					<img class="img-responsive" src="<?php	the_sub_field('grid_two_image_three'); ?>" alt="">
-				</a>
 			</div>
 		</div>
+
+
+
 	<?php	endif;
 		endwhile;
 		else :
