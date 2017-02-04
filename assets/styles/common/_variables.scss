@@ -34,6 +34,7 @@ $brand-danger:          #d9534f !default;
 
 $dark-blue: 				#0f4fd8 !default;
 $light-blue: 				#2bf2f1 !default;
+$orange: 					#ffba00 !default;
 
 
 //== Scaffolding
@@ -43,7 +44,7 @@ $light-blue: 				#2bf2f1 !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            #000 !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
