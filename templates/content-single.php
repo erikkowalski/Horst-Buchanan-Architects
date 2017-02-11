@@ -4,7 +4,7 @@
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
-	  <div id="carousel-example-generic" class="carousel fade" data-ride="carousel">
+	  <div id="carousel-project-page" class="carousel fade" data-ride="carousel">
 		  <!-- Indicators -->
 
 		  <?php
@@ -13,7 +13,7 @@
 		  <?php $dataId=0 ?>
 		  <ol class="carousel-indicators">
 			  <?php foreach( $images as $image ): ?>
-			  <li data-target="#carousel-example-generic" id="data<?php echo $dataId ?>" data-slide-to="<?php echo $dataId ?>" class=""></li>
+			  <li data-target="#carousel-project-page" id="data<?php echo $dataId ?>" data-slide-to="<?php echo $dataId ?>" class=""></li>
 			  <?php $dataId++ ?>
 			  <?php endforeach; ?>
 		  </ol>
@@ -35,11 +35,11 @@
 		  <?php endif; ?>
 
 		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		  <a class="left carousel-control" href="#carousel-project-page" role="button" data-slide="prev">
 			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 			  <span class="sr-only">Previous</span>
 		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		  <a class="right carousel-control" href="#carousel-project-page" role="button" data-slide="next">
 			  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			  <span class="sr-only">Next</span>
 		  </a>
