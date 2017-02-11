@@ -1,0 +1,29 @@
+.contact {
+	.contact-header-img{
+		margin-top: 2em;
+		position: relative;
+	}
+
+	.contact-info{
+		padding:0 1.5em 1em 1.5em;
+		position: absolute;
+		z-index: 200;
+		background: white;
+		top: 5em;
+		left: 5em;
+		hr{
+			margin: 0;
+			margin-bottom: 0.5em;
+		}
+		h4 {
+			margin: 0;
+			line-height: 1.4em;
+			.mary {
+				color: #2bf2f1;
+			}
+			.david{
+				color:#2bf2f1 #0f4fd8
+			}
+		}
+	}
+}

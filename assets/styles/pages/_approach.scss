@@ -1,0 +1,34 @@
+.approach {
+	.approach-content{
+		padding: 15px;
+		max-width: 750px;
+		margin: 0 auto;
+		background: white;
+
+		p {
+			font-weight: 100;
+			font-size: 1.1em;
+			line-height: 1.5em
+		}
+		.page-header {
+			margin-top: 0;
+			h1{
+				margin-top: 0;
+				color: black;
+				font-weight: 400;
+				@media(min-width:$screen-md){
+
+					background: white;
+					//text-align: center;
+					//padding:0.5em 2em;
+				}
+			}
+		}//h4
+		h4{
+			font-size: 1.6em;
+			line-height: 1.6em;
+			font-weight: 100;
+			margin-top: 0.3em;
+		}
+}
+}
