@@ -90,6 +90,9 @@ function display_sidebar() {
     is_page_template('template-custom.php'),
 	 is_page('how-we-work'),
     is_page('portfolio'),
+    is_page('process'),
+    is_page('about-us'),
+    is_page('approach'),
 	 is_single()
   ]);
 
