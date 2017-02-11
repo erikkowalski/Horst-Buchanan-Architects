@@ -93,6 +93,7 @@ function display_sidebar() {
     is_page('process'),
     is_page('about-us'),
     is_page('approach'),
+    is_page('contact'),
 	 is_single()
   ]);
 
