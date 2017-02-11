@@ -26,12 +26,11 @@
     },
     // Home page
     'home': {
-      init: function() {
-        // JavaScript to be fired on the home page
-      },
-      finalize: function() {
-        // JavaScript to be fired on the home page, after the init JS
-      }
+		 init: function() {
+			 $("#slide0").addClass("active");
+			 $("#data0").addClass("active");
+			 // JavaScript to be fired on the about us page
+		 }
     },
     // About us page, note the change from about-us to about_us.
     'single_project': {
@@ -77,7 +76,7 @@
   $(document).ready(UTIL.loadEvents);
 
 $(function(){
-	$('#carousel-example-generic').carousel({
+	$('#carousel-project-page').carousel({
 		interval:false
 	});
 });
