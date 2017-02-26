@@ -38,9 +38,15 @@
 			line-height: 1.6em;
 			font-weight: 100;
 			margin-top: 0.3em;
+
 		}
 		.col-md-7 {
 			padding-left: 1.0em;
+		}
+	}
+	.about-mary, .about-david{
+		h4{
+			color: $dark-blue;
 		}
 	}
 }
