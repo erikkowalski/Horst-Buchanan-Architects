@@ -1,29 +1,68 @@
 .contact {
-	.contact-header-img{
-		margin-top: 2em;
-		position: relative;
-	}
 
-	.contact-info{
-		padding:0 1.5em 1em 1.5em;
-		position: absolute;
-		z-index: 200;
+
+
+	.profile-img{
+		@media(min-width:$screen-md){
+			margin-top: 1em;
+		}
+	}
+	.contact-content{
+		padding: 15px;
+		max-width: 750px;
+		margin: 0 auto;
 		background: white;
-		top: 5em;
-		left: 5em;
-		hr{
-			margin: 0;
-			margin-bottom: 0.5em;
+		@media(min-width:$screen-md){
+			//margin-top: 30em;
+		}
+
+		p {
+			font-weight: 100;
+			font-size: 1.2em;
+			line-height: 1.5em
+		}
+		.page-header {
+			margin-top: 0;
+			h1{
+				margin-top: 0;
+				color: black;
+				font-weight: 400;
+				@media(min-width:$screen-md){
+
+					background: white;
+					//text-align: center;
+					//padding:0.5em 2em;
+				}
+			}
+		}//page-header
+		img {
+			margin-top: 0.5em;
+			margin-bottom: 1em;
+		}
+		h4{
+			font-size: 1.6em;
+			line-height: 1.6em;
+			font-weight: 100;
+			margin-top: 0.3em;
+		}
+
+	}
+		h5{
+			color: $dark-blue;
+			font-size: 1.3em;
+		}
+	.info {
+		.mail h4{
+			margin-top: 0;
 		}
 		h4 {
-			margin: 0;
-			line-height: 1.4em;
-			.mary {
-				color: #2bf2f1;
-			}
-			.david{
-				color:#2bf2f1 #0f4fd8
-			}
+			color: $dark-blue;
+			font-weight: 100;
+			margin-bottom: 0;
+		}
+		div {
+			margin-bottom: 1.5em;
 		}
 	}
+
 }
