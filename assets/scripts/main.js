@@ -32,6 +32,16 @@
 			 // JavaScript to be fired on the about us page
 		 }
     },
+	  'process': {
+		 init: function() {
+			 $("#design_slide0").addClass("active");
+			 $("#design_data0").addClass("active");
+			 $("#construction_slide0").addClass("active");
+			 $("#administration_slide0").addClass("active");
+
+			 // JavaScript to be fired on the about us page
+		 }
+    },
     // About us page, note the change from about-us to about_us.
     'single_project': {
       init: function() {
