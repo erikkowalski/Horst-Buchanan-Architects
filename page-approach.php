@@ -5,6 +5,8 @@
 	<hr>
 	<img class="img-responsive" src="<?php the_field('approach_header_image') ?>" alt="">
 	<hr>
-	<?php get_template_part('templates/content', 'page'); ?>
+	<div class="bottom">
+		<?php get_template_part('templates/content', 'page'); ?>
+	</div>
 </div>
 <?php endwhile; ?>
