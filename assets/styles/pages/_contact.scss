@@ -52,8 +52,10 @@
 			font-size: 1.3em;
 		}
 	.info {
+
 		.mail h4{
 			margin-top: 0;
+			line-height: 2.9em;
 		}
 		h4 {
 			color: $dark-blue;
@@ -62,6 +64,9 @@
 		}
 		div {
 			margin-bottom: 1.5em;
+		}
+		.email a {
+			color: black;
 		}
 	}
 
