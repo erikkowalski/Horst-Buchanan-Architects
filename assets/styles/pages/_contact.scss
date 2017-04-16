@@ -53,9 +53,9 @@
 		}
 	.info {
 
-		.mail h4{
+		.mail h4, .phone h4,.email h4{
 			margin-top: 0;
-			line-height: 2.9em;
+			line-height: 2.4em;
 		}
 		h4 {
 			color: $dark-blue;
