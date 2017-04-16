@@ -23,7 +23,7 @@
 	}
 	.process-content{
 		padding: 15px;
-		max-width: 700px;
+		max-width: 760px;
 		margin: 0 auto;
 		z-index: 200;
 		position: relative;
@@ -52,12 +52,25 @@
 			//	text-align: center;
 			//	padding:0.5em 2em;
 			}
-		}
-		}//h4
+			}//h4
+		}//.page-header
 		h4{
 			font-size: 1.6em;
 			line-height: 1.6em;
 			font-weight: 100;
 		}
+		.process-bottom-section{
+			h4{
+				margin-top: 0;
+				line-height: 1.6em;
+				color: $dark-blue;
+				font-weight: 100;
+			}
+			.process-imgs{
+				padding-left: 0;
+				padding-right: 10px;
+				margin-top: 10px;
+			}
+		}//.process-bottom-section
 	}
 }
