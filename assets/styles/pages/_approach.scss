@@ -30,5 +30,16 @@
 			font-weight: 100;
 			margin-top: 0.3em;
 		}
+		.bottom {
+			@media(min-width:$screen-md){
+				padding-right: 0.5em;
+			}
+			h4 {
+				color: $dark-blue;
+				font-weight: 100;
+				margin-bottom: 10px;
+			}
+		}
 }
+
 }
