@@ -2,7 +2,7 @@
 <p class="sub-head" ><span >ARCHITECTS</span></p>
 <?php get_template_part('templates/content', 'page'); ?>
 
-<div id="carousel-home-page" class="carousel fade" data-ride="carousel">
+<div id="carousel-home-page" class="carousel fade" data-ride="carousel" data-interval="4000">
 	<?php
 	$images = get_field('home_page_gallery');
 	if( $images ): ?>
