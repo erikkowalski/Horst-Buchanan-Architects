@@ -27,6 +27,9 @@
 		}//.grid-one-image-one
 		.grid-one-image-two{
 			position: relative;
+                @media(max-width:$screen-xs){
+                    margin-bottom: 10px;
+                }
 			h2 {
 				position: absolute;
 				background: white;
@@ -67,11 +70,17 @@
 	.grid-two {
 		.grid-two-image-one{
 			position: relative;
+                @media(max-width:$screen-xs){
+                    margin-bottom: 10px;
+                }
 			h2 {
 				position: absolute;
 				background: white;
 				padding:0.4em 0.6em;
-				font-size: 1.5em;
+                font-size: 1em;
+                @media(min-width:$screen-sm){
+				font-size: 1.0em;
+                    }
 				letter-spacing: 0.03em;
 				top: 30px;
 				right: 0;
@@ -84,7 +93,7 @@
 				position: absolute;
 				background: white;
 				padding:0.4em 0.6em;
-				font-size: 1.5em;
+				font-size: 1.0em;
 				letter-spacing: 0.03em;
 				bottom: 30px;
 				right: 0;
@@ -97,7 +106,7 @@
 				position: absolute;
 				background: white;
 				padding:0.4em 0.6em;
-				font-size: 1.5em;
+				font-size: 1.0em;
 				letter-spacing: 0.03em;
 				top: 30px;
 				left: 0;
@@ -109,11 +118,15 @@
 	.grid-three {
 		.grid-three-image-one{
 			position: relative;
+                @media(max-width:$screen-xs){
+                    margin-bottom: 10px;
+                }
 			h2 {
+
 				position: absolute;
 				background: white;
 				padding:0.4em 0.6em;
-				font-size: 1.5em;
+				font-size: 1.0em;
 				letter-spacing: 0.03em;
 				top: 30px;
 				left: 0;
@@ -126,7 +139,7 @@
 				position: absolute;
 				background: white;
 				padding:0.4em 0.6em;
-				font-size: 1.5em;
+				font-size: 1.0em;
 				letter-spacing: 0.03em;
 				bottom: 30px;
 				left: 0;
